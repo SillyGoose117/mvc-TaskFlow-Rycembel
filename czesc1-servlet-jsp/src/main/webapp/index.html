@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>TaskFlow</title>
+</head>
+<body>
+<h1>TaskFlow - Część I</h1>
+
+<p><a href="task">Wyślij żądanie GET do /task</a></p> <!--Get z servletu "task"-->
+
+<form action="task" method="post"> <!--Post z servletu "task"-->
+    <label>Twoje imię: <input type="text" name="taskName"></label> <!--Stąd pobieramy wartość naszego atrybutu
+    String taskName = req.getParameter("taskName")-->
+    <button type="submit">Wyślij żądanie POST</button>
+</form>
+</body>
+</html>
